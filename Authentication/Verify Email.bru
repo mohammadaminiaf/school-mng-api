@@ -1,0 +1,26 @@
+meta {
+  name: Verify Email
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{URL}}/verify-email
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "mohammad@gmail.com",
+    "otp": "050787"
+  }
+}
+
+body:form-urlencoded {
+  email: mohammad@gmail.com
+}
+
+body:multipart-form {
+  email: mohammad@gmail.com
+}
