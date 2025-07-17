@@ -1,0 +1,26 @@
+meta {
+  name: Send OTP
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{URL}}/send-otp
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "mohammad@gmail.com",
+    "purpose": "email_verification"
+  }
+}
+
+body:form-urlencoded {
+  email: mohammad@gmail.com
+}
+
+body:multipart-form {
+  email: mohammad@gmail.com
+}
