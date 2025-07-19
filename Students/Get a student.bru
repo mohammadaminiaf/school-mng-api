@@ -1,0 +1,15 @@
+meta {
+  name: Get a student
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{URL}}/students/10
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}

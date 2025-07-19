@@ -1,0 +1,24 @@
+meta {
+  name: Update student
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{URL}}/students/3
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "full_name": "Sharif Ahmadzai",
+    "father_name": "Mahmood Ahmadzai",
+    "gender": "male",
+    "email": "sharif212@gmail.com"
+  }
+}

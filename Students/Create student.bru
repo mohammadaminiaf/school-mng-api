@@ -1,0 +1,23 @@
+meta {
+  name: Create student
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{URL}}/students
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "full_name": "Benjamin Satan Yabo",
+    "father_name": "Bin GorbaGor",
+    "gender": "female"
+  }
+}
