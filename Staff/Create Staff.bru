@@ -1,0 +1,19 @@
+meta {
+  name: Create Staff
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{URL}}/staff
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "full_name": "Mohammad Amini",
+    "email": "mohammad@gmail.com",
+    "role_id": 1
+  }
+}
