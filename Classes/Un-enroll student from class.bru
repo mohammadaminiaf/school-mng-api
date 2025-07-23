@@ -1,0 +1,11 @@
+meta {
+  name: Un-enroll student from class
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{URL}}/classes/1/students/2
+  body: none
+  auth: inherit
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Get all students for this class
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{URL}}/classes/1/students
+  body: none
+  auth: inherit
+}

@@ -1,0 +1,18 @@
+meta {
+  name: Create Class
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{URL}}/classes
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Junior 2"
+  //   "room_number": 1
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: Update Class
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{URL}}/classes/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "teacher_id": 1
+  }
+}
