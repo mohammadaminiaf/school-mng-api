@@ -1,0 +1,15 @@
+meta {
+  name: All permissions for a role
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/roles/4/permissions
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

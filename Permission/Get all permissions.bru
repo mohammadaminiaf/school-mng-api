@@ -1,0 +1,15 @@
+meta {
+  name: Get all permissions
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/permissions
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

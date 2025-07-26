@@ -1,0 +1,21 @@
+meta {
+  name: Update permission
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{URL}}/permissions/26
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "read_students_for_free"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

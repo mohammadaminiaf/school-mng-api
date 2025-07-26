@@ -1,0 +1,15 @@
+meta {
+  name: UnAssign Permission from Role
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{URL}}/roles/5/permissions/25
+  body: json
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
