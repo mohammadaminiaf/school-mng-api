@@ -1,0 +1,15 @@
+meta {
+  name: Delete Staff role
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{URL}}/staff-roles/3
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

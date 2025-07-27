@@ -1,0 +1,15 @@
+meta {
+  name: Get staff roles
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/staff-roles
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
