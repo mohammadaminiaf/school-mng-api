@@ -1,0 +1,23 @@
+meta {
+  name: Update Staff Attendance
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{URL}}/staff-attendance/3
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "check_in": "10:00:00",
+    "check_out": "19:28:29",
+    "status": "present"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

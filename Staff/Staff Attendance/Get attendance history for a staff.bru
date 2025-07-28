@@ -1,0 +1,15 @@
+meta {
+  name: Get attendance history for a staff
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{URL}}/staff-attendance/staff/1/history
+  body: json
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
