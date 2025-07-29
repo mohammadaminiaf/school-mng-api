@@ -1,11 +1,11 @@
 meta {
-  name: All permissions for a role
+  name: Today's attendance summary
   type: http
-  seq: 1
+  seq: 5
 }
 
 get {
-  url: {{URL}}/roles/5/permissions
+  url: {{URL}}/sttaf-attendance/summary/today
   body: none
   auth: inherit
 }

@@ -1,0 +1,15 @@
+meta {
+  name: Get attendance summary for today
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{URL}}/attendance/students/class/1/summary/today
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

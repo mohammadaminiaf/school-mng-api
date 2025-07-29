@@ -1,0 +1,15 @@
+meta {
+  name: Get Class Attendance
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{URL}}/attendance/students/class/1/date/2025-07-29
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

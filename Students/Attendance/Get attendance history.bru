@@ -1,0 +1,15 @@
+meta {
+  name: Get attendance history
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{URL}}/attendance/students/student/1/history
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
