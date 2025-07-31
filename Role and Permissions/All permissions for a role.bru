@@ -5,9 +5,14 @@ meta {
 }
 
 get {
-  url: {{URL}}/roles/5/permissions
+  url: {{URL}}/roles/4/permissions?page=9&per_page=4
   body: none
   auth: inherit
+}
+
+params:query {
+  page: 9
+  per_page: 4
 }
 
 settings {

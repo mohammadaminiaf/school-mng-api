@@ -5,9 +5,14 @@ meta {
 }
 
 get {
-  url: {{URL}}/attendance/students/student/1/history
+  url: {{URL}}/attendance/students/student/1/history?page=1&per_page=8
   body: none
   auth: inherit
+}
+
+params:query {
+  page: 1
+  per_page: 8
 }
 
 settings {

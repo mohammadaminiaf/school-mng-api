@@ -5,9 +5,14 @@ meta {
 }
 
 get {
-  url: {{URL}}/attendance/students/class/1/date/2025-07-29
+  url: {{URL}}/attendance/students/class/1/date/2025-07-29?page=2&per_page=1
   body: none
   auth: inherit
+}
+
+params:query {
+  page: 2
+  per_page: 1
 }
 
 settings {

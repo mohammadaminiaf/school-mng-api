@@ -5,7 +5,12 @@ meta {
 }
 
 get {
-  url: {{URL}}/staff
+  url: {{URL}}/staff?per_page=1&page=2
   body: none
   auth: inherit
+}
+
+params:query {
+  per_page: 1
+  page: 2
 }
