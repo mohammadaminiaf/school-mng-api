@@ -1,0 +1,22 @@
+meta {
+  name: Create Fee type
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL}}/fees/fee-types
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Basic Mathematic",
+    "description": "Basic maths taught that usually lasts for 4 months and cover school maths upto grade 9"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Update student fees
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{URL}}/fees/student-fees/3
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "status": "paid"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

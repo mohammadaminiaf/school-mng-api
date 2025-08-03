@@ -1,18 +1,18 @@
 meta {
-  name: Get Class Attendance
+  name: Get fee types
   type: http
   seq: 2
 }
 
 get {
-  url: {{URL}}/attendance/students/class/1/date/2025-08-01
+  url: {{URL}}/fees/fee-types?page=2&per_page=2
   body: none
   auth: inherit
 }
 
 params:query {
-  ~page: 2
-  ~per_page: 1
+  page: 2
+  per_page: 2
 }
 
 settings {

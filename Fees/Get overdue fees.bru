@@ -1,0 +1,15 @@
+meta {
+  name: Get overdue fees
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{URL}}/fees/overdue
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

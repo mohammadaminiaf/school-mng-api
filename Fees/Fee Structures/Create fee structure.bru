@@ -1,0 +1,23 @@
+meta {
+  name: Create fee structure
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL}}/fees/class-fee-structures
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "class_id": 1,
+    "fee_type_id": 2,
+    "amount": 500
+  }
+}
+
+settings {
+  encodeUrl: true
+}
