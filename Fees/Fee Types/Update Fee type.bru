@@ -1,0 +1,23 @@
+meta {
+  name: Update Fee type
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{URL}}/fees/fee-types/32
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Elementary",
+    "amount": 400,
+    "description": "Elementary is the semester that comes right after Pre-Base and has nothing to offer newly."
+  }
+}
+
+settings {
+  encodeUrl: true
+}

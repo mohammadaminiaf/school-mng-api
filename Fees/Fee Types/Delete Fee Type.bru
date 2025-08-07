@@ -1,0 +1,15 @@
+meta {
+  name: Delete Fee Type
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{URL}}/fees/fee-types/32
+  body: json
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
