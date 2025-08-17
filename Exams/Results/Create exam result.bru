@@ -1,0 +1,22 @@
+meta {
+  name: Create exam result
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{URL}}/exams/results
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "exam_enrollment_id": 2,
+    "remarks": "The paper is not yet checked"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

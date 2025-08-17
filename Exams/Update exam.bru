@@ -1,0 +1,25 @@
+meta {
+  name: Update exam
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{URL}}/exams/3
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Elementary Middle Exam",
+    "description": "The midterm exam for elementary class by Sayed Sajad Haidari",
+    "exam_type": "final",
+    "room_number": "B1",
+    "status": "completed"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

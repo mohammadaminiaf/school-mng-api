@@ -1,0 +1,23 @@
+meta {
+  name: Create Exam Enrollment
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL}}/exam-enrollments
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "exam_id": 1,
+    "student_id": 2,
+    "notes": "This exam is an important one"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,20 +1,18 @@
 meta {
-  name: Get all users
+  name: Get exam result
   type: http
   seq: 3
 }
 
 get {
-  url: {{URL}}/users?page=1&per_page=8
+  url: {{URL}}/exams/1/results
   body: none
   auth: inherit
 }
 
 params:query {
-  page: 1
-  per_page: 8
-  ~search: Student
-  ~role_id: 7
+  ~result_status: verified
+  ~student_id: 2
 }
 
 settings {

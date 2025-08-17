@@ -1,0 +1,23 @@
+meta {
+  name: Update exam result
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{URL}}/exams/results/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {  
+    "status": "verified",
+    "marks_obtained": 99,
+    "remarks": "This student is very intelligent"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

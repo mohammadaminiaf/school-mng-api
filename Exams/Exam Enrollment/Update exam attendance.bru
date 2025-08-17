@@ -1,18 +1,18 @@
 meta {
-  name: Assign permission to a role
+  name: Update exam attendance
   type: http
   seq: 2
 }
 
-post {
-  url: {{URL}}/roles/4/permissions
+patch {
+  url: {{URL}}/exam-enrollments/2
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "permission_ids": [50]
+    "status": "present"
   }
 }
 
