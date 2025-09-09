@@ -1,0 +1,18 @@
+meta {
+  name: Update current user
+  type: http
+  seq: 10
+}
+
+patch {
+  url: {{URL}}/users/me
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Mohammad Amini",
+    "username": "heckerpluspromax"
+  }
+}

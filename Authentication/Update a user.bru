@@ -1,0 +1,20 @@
+meta {
+  name: Update a user
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{URL}}/users/3
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "New Test",
+    "email": "newTest@gmail.com",
+    "username": "newTest",
+    "password": "password"
+  }
+}

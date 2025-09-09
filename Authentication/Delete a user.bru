@@ -1,0 +1,11 @@
+meta {
+  name: Delete a user
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{URL}}/users/5
+  body: json
+  auth: inherit
+}
