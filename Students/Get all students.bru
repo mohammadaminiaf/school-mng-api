@@ -5,12 +5,13 @@ meta {
 }
 
 get {
-  url: {{URL}}/students
+  url: {{URL}}/students?gender=male
   body: none
   auth: bearer
 }
 
 params:query {
+  gender: male
   ~page: 3
   ~per_page: 8
 }
