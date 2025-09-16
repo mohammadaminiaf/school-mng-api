@@ -1,0 +1,15 @@
+meta {
+  name: Get student exam history
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{URL}}/exams/students/1
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
