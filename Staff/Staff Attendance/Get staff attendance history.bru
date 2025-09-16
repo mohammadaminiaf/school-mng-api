@@ -1,0 +1,20 @@
+meta {
+  name: Get staff attendance history
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{URL}}/staff-attendance/staff/1/history
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~page: 1
+  ~per_page: 3
+}
+
+settings {
+  encodeUrl: true
+}

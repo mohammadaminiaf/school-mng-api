@@ -1,0 +1,15 @@
+meta {
+  name: Get attendance sessions
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{URL}}/attendance/students/class/1/sessions
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
