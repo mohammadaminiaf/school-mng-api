@@ -1,11 +1,11 @@
 meta {
-  name: Verify Email
+  name: Send OTP
   type: http
-  seq: 5
+  seq: 3
 }
 
 post {
-  url: {{URL}}/verify-email
+  url: {{URL}}/send-otp
   body: json
   auth: inherit
 }
@@ -13,7 +13,7 @@ post {
 body:json {
   {
     "email": "mohammad2@gmail.com",
-    "otp": "322468"
+    "purpose": "email_verification"
   }
 }
 

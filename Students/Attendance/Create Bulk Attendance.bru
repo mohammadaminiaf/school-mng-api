@@ -1,0 +1,32 @@
+meta {
+  name: Create Bulk Attendance
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{URL}}/attendance/students/bulk
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "class_id": 1,
+    "date": "2025-09-16",
+    "records": [
+      {
+        "student_id": 2,
+        "status": "leave"
+      },
+      {
+        "student_id": 19,
+        "status": "present"
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}
