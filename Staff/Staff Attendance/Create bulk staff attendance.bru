@@ -1,0 +1,43 @@
+meta {
+  name: Create bulk staff attendance
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{URL}}/staff-attendance/bulk
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "date": "2025-09-21",
+    "records": [
+      {
+        "staff_id": 1,
+        "status": "present"
+      },
+      {
+        "staff_id": 2,
+        "status": "present"
+      },
+      {
+        "staff_id": 3,
+        "status": "present"
+      },
+      {
+        "staff_id": 4,
+        "status": "present"
+      },
+      {
+        "staff_id": 5,
+        "status": "holiday"
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

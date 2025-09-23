@@ -1,0 +1,15 @@
+meta {
+  name: Get all teachers
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/teachers
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

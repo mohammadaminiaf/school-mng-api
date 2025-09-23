@@ -5,16 +5,14 @@ meta {
 }
 
 patch {
-  url: {{URL}}/users/3
+  url: {{URL}}/users/8
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "name": "New Test",
-    "email": "newTest@gmail.com",
-    "username": "newTest",
-    "password": "password"
+  //   "username": "finance",
+    "role_id": 3
   }
 }

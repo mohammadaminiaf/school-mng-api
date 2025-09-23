@@ -5,14 +5,14 @@ meta {
 }
 
 get {
-  url: {{URL}}/users
+  url: {{URL}}/users?per_page=5
   body: none
   auth: inherit
 }
 
 params:query {
+  per_page: 5
   ~search: Mohammad
   ~page: 1
-  ~per_page: 8
   ~role_id: 1
 }
