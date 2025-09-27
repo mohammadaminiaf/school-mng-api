@@ -5,13 +5,13 @@ meta {
 }
 
 get {
-  url: {{URL}}/fees/fee-types?fee_frequency=monthly
+  url: {{URL}}/fees/fee-types
   body: none
   auth: inherit
 }
 
 params:query {
-  fee_frequency: monthly
+  ~fee_frequency: monthly
   ~page: 1
   ~per_page: 12
   ~search: 
