@@ -1,0 +1,22 @@
+meta {
+  name: Get class fees
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{URL}}/fees/classes/1/fees?month=12&year=2025&page=2&per_page=3
+  body: none
+  auth: inherit
+}
+
+params:query {
+  month: 12
+  year: 2025
+  page: 2
+  per_page: 3
+}
+
+settings {
+  encodeUrl: true
+}

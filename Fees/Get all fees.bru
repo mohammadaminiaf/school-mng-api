@@ -1,0 +1,27 @@
+meta {
+  name: Get all fees
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{URL}}/fees/all?year=2025&page=1&per_page=3
+  body: none
+  auth: inherit
+}
+
+params:query {
+  year: 2025
+  page: 1
+  per_page: 3
+  ~start_date: 2020-01-01
+  ~end_date: 2021-01-01
+  ~month: 10
+  ~fee_type_id: 1
+  ~student_name: Mr Beast
+  ~payment_status: partially_paid
+}
+
+settings {
+  encodeUrl: true
+}
