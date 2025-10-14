@@ -1,0 +1,15 @@
+meta {
+  name: Healthy Check
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{URL}}/seeder/health-check
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

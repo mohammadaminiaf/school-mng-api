@@ -1,0 +1,15 @@
+meta {
+  name: Get seeder status
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/seeder/status
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

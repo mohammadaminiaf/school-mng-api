@@ -1,0 +1,23 @@
+meta {
+  name: Create data (seed)
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{URL}}/seeder/seed
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "create_root_admin": true,
+    "root_admin_email": "mohammad@toeflmentors.com",
+    "root_admin_password": "********"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

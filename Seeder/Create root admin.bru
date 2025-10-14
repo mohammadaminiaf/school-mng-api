@@ -1,0 +1,24 @@
+meta {
+  name: Create root admin
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{URL}}/seeder/create-root-admin
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Root Administrator",
+    "username": "mohammad",
+    "email": "mohammad@toeflmentors.com",
+    "password": "********"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
