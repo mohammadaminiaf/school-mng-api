@@ -1,0 +1,22 @@
+meta {
+  name: Update Role
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{URL}}/roles/6
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "description": "A Guard is protecting the school"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
