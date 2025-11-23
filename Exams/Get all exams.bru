@@ -5,19 +5,20 @@ meta {
 }
 
 get {
-  url: {{URL}}/exams?page=1&per_page=8&exam_status=completed
+  url: {{URL}}/exams
   body: none
   auth: inherit
 }
 
 params:query {
-  page: 1
-  per_page: 8
-  exam_status: completed
+  ~page: 1
+  ~per_page: 8
+  ~exam_status: completed
   ~exam_type: midterm
   ~class_id: 1
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
